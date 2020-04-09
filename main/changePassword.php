@@ -31,7 +31,7 @@
         else{
             $sql_update = "UPDATE students SET password = '" . $password ."' WHERE username = '" . $username . "' ";
             if($conn->query($sql_update)){
-                echo "<script>alert('เปลี่ยนรหัสผ่านเสร็จแล้ว')</script>";
+                echo "<script>alert('เปลี่ยนรหัสผ่านเสร็จสิ้น')</script>";
                 header("Refresh:0 , url = ./index.php");
                 exit();
 
